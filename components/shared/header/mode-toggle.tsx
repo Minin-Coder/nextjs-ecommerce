@@ -8,7 +8,7 @@ import {
   DropdownMenuContent,
   DropdownMenuCheckboxItem,
 } from "@/components/ui/dropdown-menu";
-import { Button } from "@mui/material";
+import { Button } from "@/components/ui/button";
 
 import { MoonIcon, SunIcon, SunMoon } from "lucide-react";
 
@@ -26,7 +26,7 @@ const ModeToggle = () => {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button
-          variant="Ghost"
+          variant="ghost"
           className="focus-visible:ring-0 focus-visible:ring-offset-0"
         >
           {theme === "system" ? (

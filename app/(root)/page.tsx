@@ -1,6 +1,6 @@
 
-const Homepage = () => {
-  return ( <></> );
+const Homepage =  () => {
+  return ( <>home</> );
 }
  
 export default Homepage;
