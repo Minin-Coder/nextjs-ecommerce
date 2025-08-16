@@ -38,7 +38,7 @@ const ModeToggle = () => {
           )}
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="dropdown-content">
+  <DropdownMenuContent className="dropdown-content mode-toggle-dropdown">
         <DropdownMenuLabel className="dropdown-label">
           <b>Appearance</b>
         </DropdownMenuLabel>
