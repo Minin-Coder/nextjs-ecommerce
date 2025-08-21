@@ -342,6 +342,13 @@ body,
 .text-2xl {
   font-size: 2rem;
 }
+.my-0{
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.align-super {
+  vertical-align: super;
+}
 .ml-3 {
   margin-left: 0.75rem;
 }
