@@ -7,3 +7,5 @@ try {
   url = 'http://localhost:3000';
 }
 export const SERVER_URL = url;
+
+export const LATESR_PRODUCTS_LIMIT = Number(process.env.LATESR_PRODUCTS_LIMIT) || 4;
