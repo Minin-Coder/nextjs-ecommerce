@@ -4,6 +4,7 @@ import ProductPrice from "./Product-price";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Product } from "@/types";
 
+
 const ProductCard = ({ product }: { product: Product }) => {
   return (
     <Card className="w-full max-w-sm ">
