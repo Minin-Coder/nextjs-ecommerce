@@ -4,6 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { getProductBySlug } from "@/lib/actions/products.action";
 import { notFound } from "next/navigation";
 import ProductPrice from "@/components/shared/Product/Product-price";
+import ProductImages from "@/components/shared/Product/product-images";
 
 const ProductDetailsPage = async (props: {
   params: Promise<{ slug: string }>;
@@ -17,7 +18,10 @@ const ProductDetailsPage = async (props: {
       <section>
         <div className="grid grid-cols md:grid-cols-5">
           {/*Images Column*/}
-          <div className="col-span-2">{/*Images component*/}</div>
+          <div className="col-span-2">
+            {/*Images component*/}
+            <ProductImages images={product.images} />
+          </div>
           <div className="col-span-2 p-5">
             <div className="flex flex-col gap-5">
                 <p className="m-0">
@@ -41,18 +45,23 @@ const ProductDetailsPage = async (props: {
                     <div className="mb-2 flex justify-between">
                         <div>Price</div>
                         <div>
-                            <ProductPrice  value={Number(product.price)}/>
+                             <ProductPrice  value={Number(product.price)}/>
                         </div>
                     </div>
                     <div className="mb-2 flex justify-between">
                         <div>Status</div>
                         {product.stock > 0 ? (
-                           <Badge variant="outline">In Stock</Badge> 
+                           <Badge variant="outline">&nbsp;&nbsp;In Stock&nbsp;&nbsp;</Badge> 
                         ) : (
-                            <Badge variant="destructive">Out of Stock</Badge>
+                            <Badge variant="destructive" className="badge-destructive">&nbsp;&nbsp;Out of Stock&nbsp;&nbsp;</Badge>
                         )}
 
                     </div>
+                    {product.stock > 0 && (
+                      <div className="flex-center">
+                        <Button className="w-100 btn-dark mt-2">Add To Cart</Button>
+                      </div>
+                    ) }
                 </CardContent>
             </Card>
           </div>

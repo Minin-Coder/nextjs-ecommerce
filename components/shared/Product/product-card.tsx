@@ -21,7 +21,7 @@ const ProductCard = ({ product }: { product: Product }) => {
           />
         </Link>
       </CardHeader>
-      <CardContent className="p-4 grid gap-4">
+      <CardContent className="p-4 grid gap-3">
         <div className="text-xs">{product.brand}</div>
         <Link
           style={{ textDecoration: "none" }}

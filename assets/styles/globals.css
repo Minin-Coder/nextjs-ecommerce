@@ -1,3 +1,28 @@
+/* Tailwind-like min-h-[300px] utility */
+.min-h-\[300px\] {
+  min-height: 300px !important;
+}
+
+/* Tailwind-like object-cover utility */
+.object-cover {
+  object-fit: cover;
+}
+
+/* Tailwind-like object-center utility */
+.object-center {
+  object-position: center;
+}
+
+/* Tailwind-like space-y-4 utility */
+.space-y-4 > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+/* Manual destructive badge style */
+.badge-destructive {
+  background: #dc2626;
+  color: #fff;
+  border: none;
+}
 /* Tailwind-like justify-between utility */
 .justify-between {
   justify-content: space-between;
@@ -6,6 +31,19 @@
 .dark .icon-color {
   color: #fff !important;
   fill: #fff !important;
+}
+.w-100{
+  width: 100% !important;
+}
+.btn-dark{
+  background-color: #111;
+  color: white !important;
+  border: none !important;
+  cursor: pointer;
+}
+.btn-dark:hover{
+  background-color: #333;
+  color: white !important;
 }
 /* Dropdown separator style */
 .dropdown-separator {
