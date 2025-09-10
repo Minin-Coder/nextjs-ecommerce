@@ -1,3 +1,22 @@
+/* Tailwind-like cursor-pointer utility */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Tailwind-like mr-2 utility */
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+/* Tailwind-like border-orange-500 utility */
+.border-orange-500 {
+  border-color: #f97316 !important;
+}
+
+/* Tailwind-like hover:border-orange-600 utility */
+.hover\:border-orange-600:hover {
+  border-color: #ea580c !important;
+}
 /* Tailwind-like min-h-[300px] utility */
 .min-h-\[300px\] {
   min-height: 300px !important;

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 const ProductImages = ({ images }: { images: string[] }) => {
+
   const [current, setCurrent] = useState(0);
 
   return (
@@ -17,10 +18,10 @@ const ProductImages = ({ images }: { images: string[] }) => {
       />
       <div className="flex">
         {images.map((image, index) => (
-          <div key={image}>
-            <Image src={image} alt="image"  width={70} height={70} />
+          <div key={image} onClick={() => setCurrent(index)} className={cn("cursor-pointer border mr-2 hover:border-orange-600", current === index && "border-orange-500")}>
+            <Image src={image} alt="image" width={70} height={70} />
           </div>
-        ))}
+        ))}  
       </div>
     </div>
   );
